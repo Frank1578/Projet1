@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/csscommande.css"/>
+	<meta charset="utf-8">
+	<title>Commande</title>
+	<link rel="icon" type="image/png" href="img/ico.png" />
+</head>
+<body>
+
+	<header>
+	<p id="pLogo">
+		<img id ="logo" src="img/logo.png">
+	</p>
+	</header>
+	
+	<nav>
+		<li><a id="a1" href="index.html"><!--   id="a1" onclick="bleupale() -->Accueil</a>
+		<a id="a2" href="pagecommande.html"><!-- id="a2" onclick="bleupale2() -->Commande</a>
+		<a id="a3" href="pagecontact.html"> <!-- id="a3" onclick="bleupale3() -->Contact</a>
+		</li>
+	</nav>
+
+	
+	<form id="form1">
+	<h1 id="h11">Placer votre commande</h1>
+			<section id="sectionForm">
+					<ul><label>Prénom:</label ><input type =" text " id="Prenom" name ="Prenom" onblur="verifPrenom(this)" /></ul>
+					<ul><label>Nom:</label ><input type =" text " id="nom"  name ="nom" onblur="verifNom(this)" /></ul>
+					<ul><label>Email:</label ><input type="email"  id="adressemail" name="adressemail" placeholder="nom@domaine.com" onblur="verifMail(this)"></ul>
+					<ul><label>Adresse:</label ><input type="text"  id="Adresse" name="Adresse" placeholder="4060 rue Mon-Petit"></ul>
+					<ul><label>Téléphone:</label ><input type="text"  id="telephone" name="telephone" placeholder="xxx-xxx-xxxx" onblur="veriftelephone(this)" ></ul>
+					<ul><label>Numéro de carte de crédit:</label><input type="text" id="credit" name="credit" placeholder="XXXX-XXXX-XXXX-XXXX" onblur="verifcredit(this)"></ul>
+					<ul><label>Objet à commander:</label ><input type="text" id="objet" list="Marchandise" name="objet"></ul>
+					<ul><label>Nombre d'objet à commander:</label><input type="number" id="nombre" name="nombre" min=1 max=10></ul>
+					<datalist name="marchandise" id="Marchandise">
+						<option value="69,00$">Veangeance M65</option>
+						<option value="80,00$">G502 Proteus</option>
+						<option value="80,00$">Razer Naga</option>
+						<option value="99,99$">Strafe</option>
+						<option value="119,99$">G510s</option>
+						<option value="249,99$">Black widow</option>
+						<option value="162,67$">H2100</option>
+						<option value="59,99$">G430</option>
+						<option value="69,99$">Razer Kraken</option>
+					</datalist>
+						<input type="button" value="calculer Prix" onclick="calculerPrix()">
+						<input id="btnValider" type="submit" value="Valider" onclick="valider()">
+			</section>
+	</form>
+
+
+	
+	
+	
+	
+<script src="javascript/commandeJS.js"></script>
+</body>
+</html>

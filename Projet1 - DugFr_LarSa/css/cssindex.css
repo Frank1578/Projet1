@@ -1,0 +1,203 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html
+{
+	height: 100%;
+}
+@font-face 
+{
+font-family: myFirstFont;
+src: url(../dodger.ttf);
+}
+	#pLogo
+	{
+		text-align: center;
+		background-color: 	rgb(232,232,232) ;
+	}
+	#logo
+	{
+		height: 400px;
+		box-shadow: 0px 0px 50px black;
+		border-radius: 50px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+/**************************************************/
+nav
+{
+	background-color: rgb(166, 166, 166);
+	list-style-type: none;
+	overflow: hidden;	
+	font-family: myFirstFont;
+}
+	li
+	{
+		float: left;	
+	}
+		li a
+		{
+			font-size: 30px;
+			display: inline-block;
+			color: white;
+			text-align: center;
+			text-decoration: none;
+			padding: 10px 20px;
+			border-right: 1px solid white;
+		}
+			li a:hover
+			{
+				background-color: rgb(102, 153, 255);
+			}
+	/*****************************************************/
+
+#h1Articles
+{
+	text-align:center;
+	font-family: myFirstFont;
+}
+h2
+{
+	text-align: center;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	border-left: 3px solid black;
+	width: 90%;
+	background-color:rgb(232,232,232);
+	color: rgb(102, 153, 255);
+	font-family: myFirstFont;
+}
+#ConteneurObjet
+{
+position: relative;
+margin-left: 15%;
+margin-top: 15px;
+
+}
+	ol 
+	{
+		position:relative;
+		margin:0 10%; 
+		list-style:none;	 
+	}
+		#ConteneurSouris
+		{
+			position:absolute;
+			width:25%;
+			height:100%;	
+		}
+			.pSouris
+			{
+				position:relative; 
+				width:180px; 
+				padding-right:120px; 
+				margin-right: 5px;
+				background-color: #C8C8C8;
+				border: 3px solid black;
+				font-size: 16px;
+				
+			}
+				#souris
+				{
+					width:200px;
+					height:200px;	
+					border:1px solid black;: 1px solid black;
+					box-shadow: 10px 10px 20px white;
+				}
+			
+		#ConteneurClavier
+		{
+			position:absolute;
+			width:25%;
+			height:100%;
+			right:50%;
+		}
+			.pClavier
+			{
+				position:relative; 
+				width:180px; 
+				padding-right:120px; 
+				margin-right: 5px;
+				background-color: #C8C8C8;
+				border: 3px solid black;
+				font-size: 16px;
+			}
+				#clavier
+				{
+					width:200px;
+					height:200px;	
+					border:1px solid black;: 1px solid black;
+					box-shadow: 10px 10px 20px white;
+				}
+		#ConteneurHeadset
+		{
+			position:absolute;
+			width:25%;
+			height:100%;
+			left:50%;
+		}
+			.pHeadset
+			{
+				margin-right: 5px;
+				position:relative; 
+				width:180px; 
+				padding-right:120px; 
+				background-color: #C8C8C8;
+				border: 3px solid black;
+				font-size: 16px;
+			}
+				#headset
+				{
+					width:200px;
+					height:200px;	
+					border:1px solid black;: 1px solid black;
+					box-shadow: 10px 10px 20px white;
+				}
+#a4
+{
+	font-weight: bold;
+	font-size: 16px;
+}
+		
+/* hide and show	 
+	
+	
+	#ConteneurSouris
+	{
+		visibility: hidden;
+	}
+	#ConteneurClavier
+	{
+		visibility: hidden;
+	}
+	#headset
+	{
+		visibility: hidden;
+	}
+aside li
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+	margin-top: 10px;
+	border: 1px solid #555;
+}
+	aside ul
+	{
+		font-size: 20px;
+		display: block;
+		background-color:rgb(242, 242, 242);
+		width: 122px;
+		padding: 8px 0 8px 10px;
+		border-bottom: 1px solid #555;
+	}
+	aside li:last-child
+	{
+		border-bottom: none;
+	}
+		aside ul:hover
+		{
+			background-color: rgb(230, 230, 230);
+			cursor: pointer;
+		} */
